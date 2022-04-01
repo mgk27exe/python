@@ -1,0 +1,275 @@
+#PYTHON ÇALIŞMA KODLARI
+"""
+print("MERHABA DÜNYA")
+"""
+
+"""
+print(
+      #1
+      #2
+      #3
+      #4
+      #5
+      #6
+      )
+"""
+
+"""     
+yas=input("yaşınızı giriniz: \n")
+"""
+
+"""
+print("yaşınızın iki katı", int(yas)*2)
+#selam
+"""
+
+"""
+for yas in range(27):
+    print("MGK\n")
+"""
+
+"""
+for i in range(1,100,3):
+    print(i)
+"""
+
+"""
+sayılar = "123456789"
+for sayı in sayılar:
+    print(int(sayı)*2)
+"""
+
+"""
+a = 1
+while a == 1:
+    print("Bilgisayar çıldırdı!")    
+"""
+
+"""
+a = 1
+while a < 10:
+    a += 1
+    print("Bilgisayar yine çıldırdı!")
+"""
+
+"""
+try:
+    sayi1 = int(input("Birinci sayıyı giriniz:\n"))
+    sayi2 = int(input("İkinici sayıyı giriniz:\n"))
+    sonuc = sayi1*sayi2
+    print(sonuc)
+except ValueError as hata:
+    print("hata oluştu", hata)
+"""
+
+"""
+ilk_metin = "kasdkasmgkasmfgklsmfgkmasfg"        
+ikinci_metin = "eırtuqeırtuqoerasdfadfjkesl"
+for s in ilk_metin:
+    if not s in ikinci_metin:
+        print(s)
+"""
+
+"""
+ilk_metin = "kasdkasmgkasmfgklsmfgkmasfg"        
+ikinci_metin = "eırtuqeırtuqoerasdfadfjkesl"
+fark =""
+for s in ilk_metin:
+    
+    if not s in ikinci_metin:
+       if not s in fark:
+           fark += s
+           print(s)
+"""
+
+"""
+test1 = "sen beni bilemedin yüreğimi göremedin kendini bilemedin"
+
+for test in test1:
+    print("kelime:",test1[4:6])
+"""
+
+"""
+sesli_harfler = "aeıioöuü"
+sessiz_harfler = "bcçdfghjklmnprsştvyz"
+sesliler = ""
+sessizler = ""
+kelime = "istanbul"
+for i in kelime:
+    if i in sesli_harfler:
+        sesliler += i
+    else:
+        sessizler += i
+x = len(sesliler)
+y = len(sessizler)
+print("\n sesli harfler\n", sesliler)
+print(x)
+print("\n sessiz harfler\n", sessizler)
+print(y, "\n")    
+for i in enumerate(kelime):
+    print(i)
+z = kelime.replace("tanbul", "TONBUL")
+print(z)
+"""
+
+"""
+karakter = "MUHAMMED GÖRKEM KILIÇ"
+for i in range(len(karakter)):
+    print(karakter[i].lower()) #lower ve upper komutları!!!
+"""
+
+"""
+liste = ["mgk","abk","akk"]
+print(liste)
+
+for öğe in liste:
+    print("{} adlı öğenin veri tipi: {}".format(öğe, type(öğe)))
+"""
+
+"""
+test = "MGK BURALARIN KRALIDIR"
+x = test.split()
+print(x)
+print(len(x))
+
+y = list(test)
+print(y)
+"""
+
+"""
+x = ["x","c",["v","a"],"u"]
+print(x[2][0])
+x + [2]
+print(x)
+"""
+
+"""
+sayılar = 10
+notlar = []
+for i in range(10):
+    veri = int(input("{}.not:".format(i+1))) 
+    sayılar += veri
+    notlar += [veri]
+print("Girdiğiniz notlar:", *notlar)    
+print("Not ortalamanız:", sayılar/10)
+
+for i in range(10):
+    veri = int(input("{}.not:".format(i+1))) 
+    notlar += list(veri)
+    print("Girdiğiniz notlar:", *notlar)
+"""
+
+"""
+liste = ["1","2","3","4","5"]
+del liste[-1] # *del liste* yazılırsa tüm listeyi siler 
+print(liste)
+"""
+
+"""
+x = tuple('asfgjafg')
+print(x)
+"""
+
+"""
+liste = ["1","2","3","4","5"]
+print(dir(liste))
+"""
+
+"""
+Liste = [1,3,5,7]
+x = Liste[::2]
+print(x)
+"""
+
+"""
+li1 = [1,2,3,4,5]
+li2 = [6,7,8,9,10]
+li1.append(li2)
+print(li1)
+"""
+
+"""
+li1 = [1,2,3,4,5]
+li2 = [6,7,8,9,10]
+li1.extend(li2)
+print(li1)
+"""
+
+"""
+li1 = [1,2,3,4,5]
+li2 = [6,7,8,9,10]
+li1.insert(0, li2)
+li1.insert(1, "erik")
+print(li1)
+"""
+
+"""
+li1 = [1,2,3,4,5]
+li1.remove(1)
+print(li1)
+"""
+
+"""
+li1 = ["1","2","3","4","5"]
+li1.pop(2)
+print(li1)
+"""
+
+"""
+li1 = ["1","2","3","4","5"]
+li1.reverse()
+print(li1)
+"""
+
+"""
+test = ["kar","elma","okul","yazılım"]
+test.sort()
+print(test)
+"""
+
+"""
+test = ["kar","elma","okul","yazılım"]
+test.sort(reverse=1)
+print(test)
+"""
+
+"""
+test = ["elma","kar","elma","okul","yazılım"]
+print(test.index("elma")) #kaçıncı sırada olduğunu verir.
+print(test.count("elma")) #kaç tane olduğunu verir.
+"""
+
+"""
+li1 = [1,2,3,4,5]
+li2 = [6,7,8,9,10]
+li2 = li1.copy()
+print(li2)
+"""
+
+"""
+test = ["elma","kar","elma","okul","yazılım"]
+test.clear()
+print(test)
+"""
+
+
+liste="""Muğla Sıtkı Koçman Üniversitesi Teknoloji Fakültesi
+Bilişim Sistemleri Mühendisliği]"""
+kelime=liste.split(" ")
+print(type(kelime))
+print(len(kelime))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
